@@ -130,7 +130,7 @@ export default function About() {
               >
                 {/*  */}
                 <Image
-                  src="/about.png"
+                  src="/Farhan.jpg"
                   width="600"
                   height="600"
                   alt="portrait"
