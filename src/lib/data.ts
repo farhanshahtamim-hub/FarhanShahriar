@@ -26,7 +26,13 @@ export const links: Link[] = [
 
 export const projectsData = [
   {
-    title: "Car Edit",
+    title: "Intro Video Edit",
+    videoUrl: "https://www.youtube.com/watch?v=_SGIy7fWa2k",
+    thumbnailUrl: "https://img.youtube.com/vi/_SGIy7fWa2k/hqdefault.jpg",
+    category: "Reel",
+  },
+   {
+    title: "Travel Vlog Edit",
     videoUrl: "https://www.youtube.com/watch?v=_SGIy7fWa2k",
     thumbnailUrl: "https://img.youtube.com/vi/_SGIy7fWa2k/hqdefault.jpg",
     category: "Reel",
