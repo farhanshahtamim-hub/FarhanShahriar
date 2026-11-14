@@ -6,7 +6,7 @@ import "./custom-styles.css"; // Import the custom CSS file
 const ReactApp = () => {
   return (
     <WhatsAppWidget
-      phoneNo="+880 01705153477"
+      phoneNo="+880 1936976063"
       position="right"
       widgetWidth="300px"
       widgetWidthMobile="260px"

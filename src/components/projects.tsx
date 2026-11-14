@@ -6,6 +6,35 @@ import AnimatedButton from "./AnimatedButton";
 import Project from "./project-card";
 import SectionHeading from "./section-heading";
 
+function getYouTubeVideoId(url: string) {
+  try {
+    const parsedUrl = new URL(url);
+    const host = parsedUrl.hostname.replace(/^www\./, "");
+
+    if (host === "youtu.be") {
+      return parsedUrl.pathname.split("/")[1] ?? null;
+    } else if (host === "youtube.com" || host === "m.youtube.com") {
+      if (parsedUrl.pathname === "/watch") {
+        return parsedUrl.searchParams.get("v");
+      }
+      return parsedUrl.pathname.match(/^\/(?:shorts|embed)\/([^/]+)/)?.[1] ?? null;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
+
+function getYouTubeEmbedUrl(url: string) {
+  const videoId = getYouTubeVideoId(url);
+  return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+}
+
+function getYouTubeThumbnailUrl(url: string) {
+  const videoId = getYouTubeVideoId(url);
+  return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : undefined;
+}
+
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.1);
   // Filter projects by category
@@ -22,8 +51,8 @@ export default function Projects() {
           <Project
             key={index}
             title={project.title}
-            videoUrl={project.videoUrl}
-            thumbnailUrl={project.thumbnailUrl}
+            videoUrl={getYouTubeEmbedUrl(project.videoUrl)}
+            thumbnailUrl={project.thumbnailUrl || getYouTubeThumbnailUrl(project.videoUrl)}
             category={project.category} // <--- Include category here
           />
         ))}
@@ -34,8 +63,8 @@ export default function Projects() {
           <Project
             key={index}
             title={project.title}
-            videoUrl={project.videoUrl}
-            thumbnailUrl={project.thumbnailUrl}
+            videoUrl={getYouTubeEmbedUrl(project.videoUrl)}
+            thumbnailUrl={project.thumbnailUrl || getYouTubeThumbnailUrl(project.videoUrl)}
             category={project.category} // <--- Include category here
           />
         ))}
