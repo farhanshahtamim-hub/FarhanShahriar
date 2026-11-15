@@ -83,14 +83,11 @@ export default function About() {
 
                   <div className="mt-2 leading-relaxed text-sm text-gray-700 dark:text-white/70">
                     <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
-                      <li>Video Editing</li>
-                      <li>Script writting</li>
-                      <li>Managed/Supervised Editing Team</li>
-                      <li>Manage Daily Content Creation</li>
-                      <li>
-                        Worked with various forms of Social Media Content,
-                        including montages, motion graphics, b rolls, and reels
-                        under various types of niche.
+                      <li>Edited short-form and long-form video content.</li>
+                      <li>Handled projects across various content niches.</li>
+                      <li>Managed editing projects independently</li>
+                      <li>Applied client feedback and creative directions.</li>
+                      <li>Delivered high-quality edits within deadlines.
                       </li>
                     </ul>
                   </div>
