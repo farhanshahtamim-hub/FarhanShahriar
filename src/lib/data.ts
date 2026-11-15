@@ -58,10 +58,34 @@ export const projectsData = [
    {
     title: "Motivation",
     videoUrl: "https://youtube.com/shorts/p0b-TU3KFvs",
-    thumbnailUrl: "https://img.youtube.com/vi/p0b-TU3KFvs/hqdefault.jpg",
+
     category: "Reel",
   },
   
+
+//////////////////////////////////////////////////////LOng Videos//////////////////////////////////////////////////////
+
+  {
+    title: "Starting Agency",
+    videoUrl: "https://youtube.com/shorts/tzvI4Ce82H4",
+      thumbnailUrl: "https://img.youtube.com/vi/tzvI4Ce82H4/hqdefault.jpg",
+    category: "Long Video",
+  },
+   {
+    title: "Enjoy Life",
+    videoUrl: "https://youtube.com/shorts/PFz_wAVEHhk",
+      thumbnailUrl: "https://img.youtube.com/vi/PFz_wAVEHhk/hqdefault.jpg",
+    category: "Long Video",
+  },
+
+
+
+
+
+
+
+
+
   // {
   //   title: "Faceless Reel",
   //   videoUrl: "https://drive.google.com/file/d/1sISLghavbHiaNoXVrjITIvRFBgKXNBZB/preview",
@@ -95,12 +119,7 @@ export const projectsData = [
 
 
 
-  // {
-  //   title: "Talking Head",
-  //   videoUrl: "https://drive.google.com/file/d/15XVnO__mB-J1AOXJq4uMWbZ-JODtqNEY/preview",
-  //   thumbnailUrl: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3NVy-36SmKDTj-lOzWVBdeDcoue8TMXGN8PsHSirTXSMTR7-iHO1YKoFMNIDYUL9ElhOejhXpzPkX7ox1BCf6yevLNkCaMBJFfgnVBwZdGUySQZuN3vnxpgpxZBduTnGWC2sdgsjbt0oFzMxZDfzgSn1BRqKIR5F15GQJV8DUr83I6Y7EhDJn0uYAqu8/s1600/Talking%20Head%20Edit%20-%20frame%20at%200m2s-gigapixel-standard-scale-1_20x.jpg",
-  //   category: "Long Video",
-  // },
+
   // {
   //   title: "Event Edit",
   //   videoUrl: "https://drive.google.com/file/d/1hyMx84EoQDtKAS-5fs3bT3Xw4Bke1Tzh/preview",

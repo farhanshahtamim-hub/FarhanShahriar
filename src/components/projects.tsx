@@ -57,7 +57,7 @@ export default function Projects() {
           />
         ))}
       </div>
-      <SectionHeading>My Long Videos</SectionHeading>
+      <SectionHeading>Talking Head Reels</SectionHeading>
       <div className="flex flex-row flex-wrap justify-center gap-8 mb-16">
         {longVideos.map((project, index) => (
           <Project
