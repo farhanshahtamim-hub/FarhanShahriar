@@ -45,7 +45,7 @@ export default function Projects() {
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>My Reels</SectionHeading>
+      <SectionHeading>Podcast Reels</SectionHeading>
       <div className="flex flex-row flex-wrap justify-center gap-8 mb-28">
         {reels.map((project, index) => (
           <Project

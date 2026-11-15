@@ -51,16 +51,8 @@ export default function About() {
                   triggerOnce={true}
                 >
                   <p className="mt-2 leading-relaxed text-sm text-gray-700 dark:text-white/70">
-                    I am a professional video editor with expertise in Adobe
-                    Premiere Pro, After Effects, DaVinci Resolve, and CapCut. I
-                    specialize in creating visually captivating, high-quality
-                    videos that engage audiences and elevate brands. From
-                    cinematic storytelling to dynamic social media content, I
-                    ensure every project is crafted with precision, creativity,
-                    and attention to detail. My goal is to bring your vision to
-                    life and deliver results that exceed expectations. Let’s
-                    create videos that don’t just tell stories — they make an
-                    impact
+                    Experienced in editing short-form and long-form videos for local and international clients. Skilled in creating engaging content, adapting to different editing styles, and delivering projects that meet client expectations.
+
                   </p>
                 </Fade>
                 <Fade
@@ -166,11 +158,14 @@ export default function About() {
               damping={0.1}
               triggerOnce={true}
             >
-              <p className="text-lg sm:text-xl leading-relaxed text-gray-700 dark:text-white/70 max-w-3xl mx-auto mb-4">
-                • Grew three YouTube channels associated with my clients to over
-                1M, 200K, and 50K subscribers. Expanded several Instagram pages
-                while working alongside my clients.
-              </p>
+              {/* <p className="text-lg sm:text-xl leading-relaxed text-gray-700 dark:text-white/70 max-w-3xl mx-auto mb-4">
+                *Key Responsibilities:*
+- Edited short-form and long-form video content.
+- Handled projects across various content niches.
+- Managed editing projects independently.
+- Applied client feedback and creative directions.
+- Delivered high-quality edits within deadlines.
+              </p> */}
               {/* <p className="text-lg sm:text-xl leading-relaxed text-gray-700 dark:text-white/70 max-w-3xl mx-auto mb-4 text-center">
                 • Worked for{" "}
                 <a
@@ -185,8 +180,11 @@ export default function About() {
               </p> */}
 
               <p className="text-lg sm:text-xl leading-relaxed text-gray-700 dark:text-white/70 max-w-3xl mx-auto">
-                • Established my digital presence with 4K+ subscribers on
-                YouTube and 4K+ followers on Instagram.
+      Successfully completed multiple video editing projects for local and international clients.
+- Gained hands-on experience in both short-form and long-form video editing.
+- Adapted to different editing styles, content formats, and niche requirements.
+- Developed the ability to independently manage projects and deliver edits based on client feedback.
+- Built practical experience working with remote teams and meeting project deadlines.
               </p>
             </Fade>
           </div>

@@ -3,7 +3,6 @@ import { useActiveSectionContext } from "@/containers/active-section";
 import { useSectionInView } from "@/lib/useInView";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import { BiLogoInstagramAlt } from "react-icons/bi";
@@ -18,11 +17,12 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[75rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 flex w-full max-w-[75rem] flex-col items-center px-4 text-center sm:mb-0 sm:px-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
+            className="relative aspect-video w-[calc(100vw-2rem)] max-w-3xl overflow-hidden rounded-xl shadow-xl sm:w-[80vw] sm:rounded-[20px]"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -32,19 +32,18 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image
-              src="/boy.png"
-              width="480"
-              height="480"
-              alt="portrait"
-              quality="100"
-              priority={true}
-              className="rounded-[20px] object-cover shadow-xl"
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/_SGIy7fWa2k"
+              title="Farhan Shahriar Tamim's YouTube videos"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             />
           </motion.div>
 
           <motion.span
-            className="text-6xl absolute bottom-8 right-12"
+            className="absolute bottom-3 right-3 text-4xl sm:bottom-8 sm:right-12 sm:text-6xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -77,7 +76,7 @@ export default function Intro() {
       </Fade>
 
       <motion.div
-        className="flex sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+        className="mx-auto grid w-full max-w-3xl grid-cols-6 items-center justify-items-center gap-3 px-2 text-base font-medium sm:grid-cols-7 sm:gap-4 sm:px-4 sm:text-lg"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -86,7 +85,7 @@ export default function Intro() {
       >
         <Link
           href="mailto:work.farhanshahtamim@gmail.com"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 dark:bg-white/10 active:scale-105 transition"
+          className="group col-span-6 flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-5 py-3 text-white outline-none transition hover:scale-105 hover:bg-gray-950 focus:scale-105 active:scale-105 dark:bg-white/10 sm:col-span-2 sm:px-7"
           onClick={() => {
             setActiveSection("#contact");
             setTimeOfLastClick(Date.now());
@@ -96,7 +95,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 "
+          className="group col-span-6 flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-full borderBlack bg-gray-900 px-5 py-3 text-white transition hover:scale-105 focus:scale-105 active:scale-105 dark:bg-white/10 sm:col-span-2 sm:px-7"
           href="/Resume.pdf"
           download
         >
@@ -105,7 +104,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-gray-900 p-4 text-white flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="col-span-2 mx-auto flex h-12 w-12 items-center justify-center rounded-full borderBlack bg-gray-900 text-xl text-white transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10 dark:text-white/60 sm:col-span-1 sm:h-14 sm:w-14 sm:text-2xl"
           href=" https://www.linkedin.com/in/s-m-farhan-sahriar-tamim/"
           target="_blank"
         >
@@ -113,14 +112,14 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-gray-900 p-4 text-white flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="col-span-2 mx-auto flex h-12 w-12 items-center justify-center rounded-full borderBlack bg-gray-900 text-xl text-white transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10 dark:text-white/60 sm:col-span-1 sm:h-14 sm:w-14 sm:text-2xl"
           href="https://www.instagram.com/farhan_shah_tamim/?next=%2F&hl=en"
           target="_blank"
         >
           <BiLogoInstagramAlt />
         </a>
         <a
-          className="bg-gray-900 p-4 text-white flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="col-span-2 mx-auto flex h-12 w-12 items-center justify-center rounded-full borderBlack bg-gray-900 text-xl text-white transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10 dark:text-white/60 sm:col-span-1 sm:h-14 sm:w-14 sm:text-2xl"
           href=" https://www.youtube.com/@FarhanShahriartamim"
           target="_blank"
         >

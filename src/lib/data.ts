@@ -26,15 +26,39 @@ export const links: Link[] = [
 
 export const projectsData = [
   {
-    title: "Intro Video Edit",
-    videoUrl: "https://www.youtube.com/watch?v=_SGIy7fWa2k",
-    thumbnailUrl: "https://img.youtube.com/vi/_SGIy7fWa2k/hqdefault.jpg",
+    title: "Stressed",
+    videoUrl: "https://youtube.com/shorts/EJJQsB8hZIY",
+    thumbnailUrl: "https://img.youtube.com/vi/EJJQsB8hZIY/hqdefault.jpg",
     category: "Reel",
   },
    {
-    title: "Travel Vlog Edit",
-    videoUrl: "https://www.youtube.com/watch?v=_SGIy7fWa2k",
-    thumbnailUrl: "https://img.youtube.com/vi/_SGIy7fWa2k/hqdefault.jpg",
+    title: "Mistakes",
+    videoUrl: "https://youtube.com/shorts/KUP5_NSk2D8",
+    thumbnailUrl: "https://img.youtube.com/vi/KUP5_NSk2D8/hqdefault.jpg",
+    category: "Reel",
+  },
+   {
+    title: "Judge People",
+    videoUrl: "https://youtube.com/shorts/RngOv3_EGL8",
+    thumbnailUrl: "https://img.youtube.com/vi/RngOv3_EGL8/hqdefault.jpg",
+    category: "Reel",
+  },
+   {
+    title: "Lonely",
+    videoUrl: "https://youtube.com/shorts/tGA98cEUHx4",
+    thumbnailUrl: "https://img.youtube.com/vi/tGA98cEUHx4/hqdefault.jpg",
+    category: "Reel",
+  },
+   {
+    title: "Perspective",
+    videoUrl: "https://youtube.com/shorts/FRm0iHQD_rQ",
+    thumbnailUrl: "https://img.youtube.com/vi/FRm0iHQD_rQ/hqdefault.jpg",
+    category: "Reel",
+  },
+   {
+    title: "Motivation",
+    videoUrl: "https://youtube.com/shorts/p0b-TU3KFvs",
+    thumbnailUrl: "https://img.youtube.com/vi/p0b-TU3KFvs/hqdefault.jpg",
     category: "Reel",
   },
   
