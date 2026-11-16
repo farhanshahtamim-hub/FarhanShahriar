@@ -32,7 +32,8 @@ function getYouTubeEmbedUrl(url: string) {
 
 function getYouTubeThumbnailUrl(url: string) {
   const videoId = getYouTubeVideoId(url);
-  return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : undefined;
+  // Changed `undefined` to `""` so it always returns a string
+  return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "";
 }
 
 export default function Projects() {
@@ -52,8 +53,8 @@ export default function Projects() {
             key={index}
             title={project.title}
             videoUrl={getYouTubeEmbedUrl(project.videoUrl)}
-           thumbnailUrl={project.thumbnailUrl || getYouTubeThumbnailUrl(project.videoUrl) || ""}
-            category={project.category} // <--- Include category here
+            thumbnailUrl={project.thumbnailUrl || getYouTubeThumbnailUrl(project.videoUrl)}
+            category={project.category}
           />
         ))}
       </div>
@@ -65,7 +66,7 @@ export default function Projects() {
             title={project.title}
             videoUrl={getYouTubeEmbedUrl(project.videoUrl)}
             thumbnailUrl={project.thumbnailUrl || getYouTubeThumbnailUrl(project.videoUrl)}
-            category={project.category} // <--- Include category here
+            category={project.category}
           />
         ))}
       </div>
