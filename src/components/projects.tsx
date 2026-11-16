@@ -52,7 +52,7 @@ export default function Projects() {
             key={index}
             title={project.title}
             videoUrl={getYouTubeEmbedUrl(project.videoUrl)}
-            thumbnailUrl={project.thumbnailUrl || getYouTubeThumbnailUrl(project.videoUrl)}
+           thumbnailUrl={project.thumbnailUrl || getYouTubeThumbnailUrl(project.videoUrl) || ""}
             category={project.category} // <--- Include category here
           />
         ))}
